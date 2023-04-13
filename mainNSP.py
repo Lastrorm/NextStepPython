@@ -11,7 +11,7 @@ import Ej09
 import Ej10
 import Ej11
 
-while True
+while True:
     os.system('cls') #limpia pantalla
     print('Bienvenidos')
     print('1- Cambio formato fecha de "dd/mm/aaaa" a "aaaa-mm-dd"')
@@ -27,29 +27,29 @@ while True
     print('11-devolver números multiplos de 3')
     opcion = input('seleccione programa a ejecutar')
 
-    if opcion = '1':
-        Ej01()
-    elif opcion = '2':
-        Ej02()
-    elif opcion = '3':
-        Ej03()
-    elif opcion = '4':
-        Ej04()
-    elif opcion = '5':
-        Ej05()
-    elif opcion = '6':
-        Ej06()
-    elif opcion = '7':
-        Ej07()
-    elif opcion = '8':
-        Ej08()
-    elif opcion = '9':
-        Ej09()
-    elif opcion = '10':
-        Ej10()
-    elif opcion = '11':
-        Ej11()
-    elif opcion = '0' :
+    if opcion == '1':
+        Ej01.principal()
+    elif opcion == '2':
+        Ej02.principal()
+    elif opcion =='3':
+        Ej03.principal()
+    elif opcion == '4':
+        Ej04.principal()
+    elif opcion == '5':
+        Ej05.principal()
+    elif opcion == '6':
+        Ej06.principal()
+    elif opcion == '7':
+        Ej07.principal()
+    elif opcion == '8':
+        Ej08.principal()
+    elif opcion == '9':
+        Ej09.principal()
+    elif opcion == '10':
+        Ej10.principal()
+    elif opcion == '11':
+        Ej11.principal()
+    elif opcion == '0' :
       print('Un placer, hasta la proxima')
     break  
       

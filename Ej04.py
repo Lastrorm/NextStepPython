@@ -1,23 +1,23 @@
 from datetime import datetime
-
-while True:
-    try:
-        hora = datetime.strptime(input("Escribe una hora: "), '%H-%M')
-    except ValueError:
-        print("Formato de fecha incorrecto, debe ser dd/mm/yyyy")
-    else:
-        break
-
-if hora.hour <= 12:
+def principal():
     while True:
         try:
-            ampm = input("Indica si la hora es AM o PM: ").upper
-            if ampm != "AM" and ampm != "PM":
-                raise ValueError
+            hora = datetime.strptime(input("Escribe una hora: "), '%H-%M')
         except ValueError:
-            print("Debes escribir AM o PM")
+            print("Formato de fecha incorrecto, debe ser dd/mm/yyyy")
         else:
             break
+
+    if hora.hour <= 12:
+        while True:
+            try:
+                ampm = input("Indica si la hora es AM o PM: ").upper
+                if ampm != "AM" and ampm != "PM":
+                    raise ValueError
+            except ValueError:
+                print("Debes escribir AM o PM")
+            else:
+                break
 
 
 """
