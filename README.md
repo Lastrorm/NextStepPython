@@ -4,7 +4,7 @@
  - Alejandro Collantes Linares
  - Víctor Manuel Pérez Rosa
 
-## Los programas presentes en este repositorio fueron creados para resolver los siguientes problemas: 
+## Los programas disponibles en este repositorio: 
 
 1. Cambio formato fecha de "dd/mm/aaaa" a "aaaa-mm-dd".
 2. Mostrar hora exacta según zona horaria.
