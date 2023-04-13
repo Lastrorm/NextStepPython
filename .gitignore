@@ -15,6 +15,7 @@ __pycache__/
 venv/
 env/
 .virtualenv/
+.idea/
 
 # Archivos de configuración locales
 .env
