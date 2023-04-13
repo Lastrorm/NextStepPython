@@ -7,7 +7,7 @@ Este es un programa simple capaz de realizar unas sencillas tareas como práctic
 * Python
 * Visual Studio Code 
 
-##Instalación
+## Instalación
 1. Clona el repositorio con Git 
 ```sh
    git clone https://github.com/your_username_/Project-Name.git
