@@ -1,4 +1,5 @@
 import os
+import platform
 import Ej01
 import Ej02
 import Ej03
@@ -11,20 +12,27 @@ import Ej09
 import Ej10
 import Ej11
 
+#limpia pantalla
 while True:
-    os.system('cls') #limpia pantalla
+    if platform.system()=='Windows':
+        os.system('cls') 
+    elif platform.system()=='Darwin':
+        os.system('clear')
+    elif platform.system()=='Linux':
+        os.system('clear')
+#imprimimos programas disponible
     print('Bienvenidos')
-    print('1 - Cambio formato fecha de "dd/mm/aaaa" a "aaaa-mm-dd"')
-    print('2 - Mostrar hora exacta según zona horaria')
-    print('3 - Saber número de palabras según zona horaria')
-    print('4 - Pasar de formato de hora de 12H a 24H')
-    print('5 - Invertir cadena de texto')
-    print('6 - Sumar todos los numeros del 1 al numero dado')
-    print('7 - Imprimir las letras de una cadena en lineas separadas')
-    print('8 - Devolver las cadenas de una lista con más de 5 caracteres')
-    print('9 - Reemplazar una palabra en una cadena de texto')
-    print('10 - Devuelve a partir de una lista de caracteres otra lista con las cadenas que tienen al menos una vocal ')
-    print('11 - Devolver números multiplos de 3')
+    print('1- Cambio formato fecha de "dd/mm/aaaa" a "aaaa-mm-dd"')
+    print('2- Mostrar hora exacta según zona horaria')
+    print('3-Saber número de palabras de una cadena de')
+    print('4-Pasar de formato de hora de 12H a 24H')
+    print('5-Invertir cadena de texto')
+    print('6- Sumar todos los numeros del 1 al numero dado')
+    print('7-Imprimir las letras de una cadena en lineas separadas')
+    print('8- Devolver las cadenas de una lista con más de 5 caracteres')
+    print('9-reemplazar una palabra en una cadena de texto')
+    print('10-Devuelve a partir de una lista de caracteres otra lista con las cadenas que tienen al menos una vocal ')
+    print('11-devolver números multiplos de 3')
     opcion = input('seleccione programa a ejecutar')
 
     if opcion == '1':

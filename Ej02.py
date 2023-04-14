@@ -6,3 +6,4 @@ import pytz
 def principal():
     print (pytz.all_timezones)
     zona = input('Segun la lista. Introduzca su zona horaria para saber la hora exacta')
+    print(datetime.now(timezone(zona)))
