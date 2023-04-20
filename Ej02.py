@@ -2,7 +2,8 @@
 # El programa debe manejar excepciones en caso de que la zona horaria ingresada no sea válida.
 import datetime
 from distutils.config import PyPIRCCommand
-from pytz import timezone
 import pytz
-print (pytz.all_timezones)
-zona = input('Segun la lista. Introduzca su zona horaria para saber la hora exacta')
+def principal():
+    print (pytz.all_timezones)
+    zona = input('Segun la lista. Introduzca su zona horaria para saber la hora exacta')
+    print(datetime.now(timezone(zona)))
